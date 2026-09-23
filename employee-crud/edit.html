@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Update Employee</title>
+</head>
+<body>
+
+<h1>Update Employee</h1>
+
+<p>
+  <a href="index.html">List</a> |
+  <a href="add.html">Add</a> |
+  <a href="tests.html">Test Cases</a>
+</p>
+
+<hr>
+
+<p>Change the details below and press <strong>Save</strong>. The ID cannot be edited.</p>
+
+<form action="index.html" method="get">
+  <fieldset>
+    <legend>Employee Details</legend>
+
+    <p>
+      <label for="id">ID</label><br>
+      <input type="text" id="id" name="id" value="1" readonly>
+    </p>
+
+    <p>
+      <label for="last_name">Last Name *</label><br>
+      <input type="text" id="last_name" name="last_name" value="Dela Cruz" maxlength="50" required>
+    </p>
+
+    <p>
+      <label for="middle_name">Middle Name</label><br>
+      <input type="text" id="middle_name" name="middle_name" value="Santos" maxlength="50">
+    </p>
+
+    <p>
+      <label for="first_name">First Name *</label><br>
+      <input type="text" id="first_name" name="first_name" value="Juan" maxlength="50" required>
+    </p>
+  </fieldset>
+
+  <p>
+    <button type="submit">Save</button>
+    <button type="reset">Reset</button>
+  </p>
+</form>
+
+<form action="index.html" method="get">
+  <button type="submit">Cancel</button>
+</form>
+
+</body>
+</html>

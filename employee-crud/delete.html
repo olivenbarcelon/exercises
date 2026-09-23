@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Delete Employee</title>
+</head>
+<body>
+
+<h1>Delete Employee</h1>
+
+<p>
+  <a href="index.html">List</a> |
+  <a href="add.html">Add</a> |
+  <a href="tests.html">Test Cases</a>
+</p>
+
+<hr>
+
+<p><strong>Warning:</strong> this will permanently remove the employee record shown below.
+This action cannot be undone. Are you sure you want to continue?</p>
+
+<table border="1">
+  <caption>Record to be deleted</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Last Name</th>
+      <th>Middle Name</th>
+      <th>First Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dela Cruz</td>
+      <td>Santos</td>
+      <td>Juan</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<form action="index.html" method="get">
+  <input type="hidden" name="deleted" value="1">
+  <button type="submit">Yes, Delete</button>
+</form>
+
+<form action="index.html" method="get">
+  <button type="submit">No, Cancel</button>
+</form>
+
+</body>
+</html>

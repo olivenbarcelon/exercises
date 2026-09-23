@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Employee List</title>
+</head>
+<body>
+
+<h1>Employee List</h1>
+
+<p>
+  <a href="index.html">List</a> |
+  <a href="add.html">Add</a> |
+  <a href="tests.html">Test Cases</a>
+</p>
+
+<hr>
+
+<p>All employee records currently on file. Use <strong>Add Employee</strong> to create a
+new record, or the <strong>Update</strong> / <strong>Delete</strong> buttons on a row to
+change or remove that employee.</p>
+
+<form action="add.html" method="get">
+  <button type="submit">Add Employee</button>
+</form>
+
+<br>
+
+<table border="1">
+  <caption>Employees</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Last Name</th>
+      <th>Middle Name</th>
+      <th>First Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dela Cruz</td>
+      <td>Santos</td>
+      <td>Juan</td>
+      <td>
+        <form action="edit.html" method="get">
+          <input type="hidden" name="id" value="1">
+          <button type="submit">Update</button>
+        </form>
+        <form action="delete.html" method="get">
+          <input type="hidden" name="id" value="1">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Reyes</td>
+      <td>Lopez</td>
+      <td>Maria</td>
+      <td>
+        <form action="edit.html" method="get">
+          <input type="hidden" name="id" value="2">
+          <button type="submit">Update</button>
+        </form>
+        <form action="delete.html" method="get">
+          <input type="hidden" name="id" value="2">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Garcia</td>
+      <td>Mendoza</td>
+      <td>Jose</td>
+      <td>
+        <form action="edit.html" method="get">
+          <input type="hidden" name="id" value="3">
+          <button type="submit">Update</button>
+        </form>
+        <form action="delete.html" method="get">
+          <input type="hidden" name="id" value="3">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Bautista</td>
+      <td>Cruz</td>
+      <td>Ana</td>
+      <td>
+        <form action="edit.html" method="get">
+          <input type="hidden" name="id" value="4">
+          <button type="submit">Update</button>
+        </form>
+        <form action="delete.html" method="get">
+          <input type="hidden" name="id" value="4">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Villanueva</td>
+      <td>Ramos</td>
+      <td>Pedro</td>
+      <td>
+        <form action="edit.html" method="get">
+          <input type="hidden" name="id" value="5">
+          <button type="submit">Update</button>
+        </form>
+        <form action="delete.html" method="get">
+          <input type="hidden" name="id" value="5">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<p><small>Manual test checklist for these pages: <a href="tests.html">tests.html</a></small></p>
+
+</body>
+</html>

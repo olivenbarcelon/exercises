@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test Cases &mdash; Employee CRUD</title>
+</head>
+<body>
+
+<h1>Test Cases &mdash; Employee CRUD</h1>
+
+<p>
+  <a href="index.html">List</a> |
+  <a href="add.html">Add</a> |
+  <a href="tests.html">Test Cases</a>
+</p>
+
+<hr>
+
+<p>These pages contain no JavaScript, so there is no test runner to assert anything
+automatically. This page is the HTML-only substitute: a manual test checklist. Open each
+page, perform the step, compare against the expected result, and tick
+<strong>Pass</strong> or <strong>Fail</strong>. The checkboxes are plain
+<code>&lt;input type="checkbox"&gt;</code> elements &mdash; no script required.</p>
+
+<table border="1">
+  <caption>Manual test checklist</caption>
+  <thead>
+    <tr>
+      <th>Test ID</th>
+      <th>Page</th>
+      <th>Test Step</th>
+      <th>Expected Result</th>
+      <th>Pass</th>
+      <th>Fail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TC-01</td>
+      <td>index.html</td>
+      <td>Open the page and inspect the table header.</td>
+      <td>Header shows five columns: ID, Last Name, Middle Name, First Name, Actions.</td>
+      <td><input type="checkbox" name="tc01" value="pass"></td>
+      <td><input type="checkbox" name="tc01" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-02</td>
+      <td>index.html</td>
+      <td>Count the data rows in the table body.</td>
+      <td>Five employee rows are shown, each with a non-empty ID, last name and first name.</td>
+      <td><input type="checkbox" name="tc02" value="pass"></td>
+      <td><input type="checkbox" name="tc02" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-03</td>
+      <td>index.html</td>
+      <td>Click the <strong>Add Employee</strong> button above the table.</td>
+      <td>The browser navigates to add.html.</td>
+      <td><input type="checkbox" name="tc03" value="pass"></td>
+      <td><input type="checkbox" name="tc03" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-04</td>
+      <td>index.html</td>
+      <td>Check the Actions cell of every row.</td>
+      <td>Each row has both an Update button and a Delete button.</td>
+      <td><input type="checkbox" name="tc04" value="pass"></td>
+      <td><input type="checkbox" name="tc04" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-05</td>
+      <td>index.html</td>
+      <td>Click <strong>Update</strong> on the row with ID 3.</td>
+      <td>The browser navigates to edit.html and the address bar contains <code>id=3</code>.</td>
+      <td><input type="checkbox" name="tc05" value="pass"></td>
+      <td><input type="checkbox" name="tc05" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-06</td>
+      <td>index.html</td>
+      <td>Click <strong>Delete</strong> on the row with ID 3.</td>
+      <td>The browser navigates to delete.html and the address bar contains <code>id=3</code>.</td>
+      <td><input type="checkbox" name="tc06" value="pass"></td>
+      <td><input type="checkbox" name="tc06" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-07</td>
+      <td>add.html</td>
+      <td>Inspect the form fields.</td>
+      <td>Four labelled inputs are present: ID, Last Name, Middle Name, First Name.</td>
+      <td><input type="checkbox" name="tc07" value="pass"></td>
+      <td><input type="checkbox" name="tc07" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-08</td>
+      <td>add.html</td>
+      <td>Leave Last Name blank, fill the rest, press <strong>Save</strong>.</td>
+      <td>The browser blocks submission and shows its own "fill out this field" message.</td>
+      <td><input type="checkbox" name="tc08" value="pass"></td>
+      <td><input type="checkbox" name="tc08" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-09</td>
+      <td>add.html</td>
+      <td>Fill ID, Last Name and First Name only, leave Middle Name blank, press <strong>Save</strong>.</td>
+      <td>The form submits and returns to index.html &mdash; Middle Name is optional.</td>
+      <td><input type="checkbox" name="tc09" value="pass"></td>
+      <td><input type="checkbox" name="tc09" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-10</td>
+      <td>add.html</td>
+      <td>Type values into all four fields, then press <strong>Reset</strong>.</td>
+      <td>All four fields are cleared back to empty.</td>
+      <td><input type="checkbox" name="tc10" value="pass"></td>
+      <td><input type="checkbox" name="tc10" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-11</td>
+      <td>edit.html</td>
+      <td>Open the page and inspect the fields.</td>
+      <td>Fields are pre-filled with the employee's details and the ID field is read-only.</td>
+      <td><input type="checkbox" name="tc11" value="pass"></td>
+      <td><input type="checkbox" name="tc11" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-12</td>
+      <td>edit.html</td>
+      <td>Press <strong>Cancel</strong>.</td>
+      <td>The browser returns to index.html without saving.</td>
+      <td><input type="checkbox" name="tc12" value="pass"></td>
+      <td><input type="checkbox" name="tc12" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-13</td>
+      <td>delete.html</td>
+      <td>Open the page.</td>
+      <td>The record is shown in a read-only table with a warning, plus separate
+          "Yes, Delete" and "No, Cancel" buttons &mdash; nothing happens until one is clicked.</td>
+      <td><input type="checkbox" name="tc13" value="pass"></td>
+      <td><input type="checkbox" name="tc13" value="fail"></td>
+    </tr>
+    <tr>
+      <td>TC-14</td>
+      <td>all pages</td>
+      <td>View the source of each page (Ctrl+U / Cmd+Option+U).</td>
+      <td>No <code>&lt;script&gt;</code> tag, no <code>&lt;style&gt;</code> tag, no
+          <code>style=</code> attribute and no stylesheet link anywhere.</td>
+      <td><input type="checkbox" name="tc14" value="pass"></td>
+      <td><input type="checkbox" name="tc14" value="fail"></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Tester Sign-off</h2>
+
+<form action="tests.html" method="get">
+  <fieldset>
+    <legend>Result Summary</legend>
+    <p>
+      <label for="tester">Tested by</label><br>
+      <input type="text" id="tester" name="tester" maxlength="50">
+    </p>
+    <p>
+      <label for="tested_on">Date tested</label><br>
+      <input type="date" id="tested_on" name="tested_on">
+    </p>
+    <p>
+      <label for="notes">Notes on any failures</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="60"></textarea>
+    </p>
+  </fieldset>
+  <p>
+    <button type="submit">Record Result</button>
+    <button type="reset">Clear</button>
+  </p>
+</form>
+
+</body>
+</html>
